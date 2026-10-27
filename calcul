@@ -1,0 +1,11 @@
+#!/bin/bash
+echo "taper un chiffre : "
+read reponse
+resultat=$(( reponse % 2 ))
+
+if (( $resultat == 0 )); then
+	echo "est pair"
+else
+	echo "est impair"
+fi
+
